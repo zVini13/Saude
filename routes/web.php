@@ -15,4 +15,16 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('inicio');
+
+Route::get('/login', 'App\Http\Controllers\ControllerSaude@logar')->name('login');
+Route::get('/cadastro', 'App\Http\Controllers\ControllerSaude@cadastrar')->name('cadastro');
+Route::get('/recuperar-senha', 'App\Http\Controllers\ControllerSaude@recuperar')->name('recupera');
+
+
+
+
+
+
+
+

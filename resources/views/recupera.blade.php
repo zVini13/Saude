@@ -12,6 +12,7 @@
 <style>
         body{
             font-family: 'Oswald', sans-serif;
+            background-color: aquamarine;
         }
         h1{
             font-size: 55px;

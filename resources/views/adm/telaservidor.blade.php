@@ -107,7 +107,7 @@
         <header class="row">
             <div class="row mt-3">
                 <div class="d-flex justify-content-center">
-                    <h1>Página inicial</h1>
+                    <h1>Página do administrador</h1>
                 </div></div>
         </header>
         <div class="row">
@@ -119,24 +119,25 @@
                 <nav class="sidebar card py-2 mb-4">
                 <ul class="nav flex-column" id="nav_accordion">
                   <li class="nav-item has-submenu">
-                    <a class="nav-link" href="#"> Médicos <i class="bi small bi-caret-down-fill"></i> </a>
+                    <a class="nav-link" href="#"> Instituição <i class="bi small bi-caret-down-fill"></i> </a>
                     <ul class="submenu collapse">
-                      <li><a class="nav-link" href="{{route('atendendohoje')}}">Atendendo hoje</a></li>
-                      <li><a class="nav-link" href="{{route('listarmedicos')}}">Lista de médicos</a></li>
+                      <li><a class="nav-link" href="{{route('cadastrocentro')}}">Cadastrar</a></li>
+                      <li><a class="nav-link" href="{{route('listarcentrosadm')}}">Listar</a></li>
                     </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="{{route('listarcentrosdesaude')}}"> Centros de Saúde </a>
                   </li>
                   <li class="nav-item has-submenu">
-                    <a class="nav-link" href="#"> Consultas <i class="bi small bi-caret-down-fill"></i> </a>
+                    <a class="nav-link" href="#"> Consulta <i class="bi small bi-caret-down-fill"></i> </a>
                     <ul class="submenu collapse">
-                        <li><a class="nav-link" href="{{route('listarconsultas')}}">Lista de consultas</a></li>
-                        <li><a class="nav-link" href="{{route('acontecendohoje')}}">Acontecendo hoje</a></li>
+                        <li><a class="nav-link" href="{{route('agendarconsulta')}}">Agendar consulta</a></li>
+                        <li><a class="nav-link" href="{{route('listarconsultasadm')}}">Listar consultas</a></li>
                     </ul>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="{{route('plantoes')}}"> Plantões </a>
+                  <li class="nav-item has-submenu">
+                    <a class="nav-link" href="{{route('plantoes')}}"> Plantões <i class="bi small bi-caret-down-fill"></i> </a>
+                    <ul class="submenu collapse">
+                        <li><a class="nav-link" href="{{route('agendarplantao')}}">Agendar plantão</a></li>
+                        <li><a class="nav-link" href="{{route('listarplantoesadm')}}">Listar plantões</a></li>
+                    </ul>
                   </li>
                   {{-- <li class="nav-item">
                     <a class="nav-link" href="#"> Menu item </a>

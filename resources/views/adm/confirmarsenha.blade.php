@@ -28,7 +28,7 @@
    </div>
    <div class="card">
     <div class="card-body">   
-        <h3>Para restaurar a sua senha, informe seu e-mail de login. Em instantes, um código de confirmação será enviado a esse e-mail para que a senha seja redefinida.</h3>
+        <h3>Informe abaixo o código de confirmação enviado para seu e-mail.</h3>
     </div>
   </div>
    {{-- <div class="row mt-3">
@@ -38,10 +38,10 @@
    <form>
     @csrf
     <div class="mt-3">
-        <label for="email" class="form-label"><h3>E-mail:</h3></label>
-        <input type="text" class="form-control" id="email" name= "email">
+        <label for="codigo" class="form-label"><h3>Código:</h3></label>
+        <input type="number" class="form-control" id="codigo" name= "codigo">
     <div class="mt-3">   
-        <button type="submit" class="btn btn-primary"><h3>Enviar</h3></button>
+        <a href="{{route('redefinir')}}" class="btn btn-primary" ><h2>Confirmar</h2></a>
     </div>
 
 

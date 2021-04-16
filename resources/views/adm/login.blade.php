@@ -29,16 +29,16 @@
         <form> 
             @csrf
             <div class="mb-3">
-                <label for="cnpj" class="form-label"><h3>CNPJ:</h3></label>
-                <input type="number" class="form-control" id="cnpj" name= "cnpj">
+                <label for="email" class="form-label"><h3>E-mail:</h3></label>
+                <input type="text" class="form-control" id="email" name= "email">
             </div>
             <div class="mb-3">
                 <label for="senha" class="form-label"><h3>Senha:</h3></label>
                 <input type="password" class="form-control" id="senha" name= "senha"></div>
         
         
-                <button type="submit" class="btn btn-primary"><h3>Logar</h3></button>
-                <a href="{{route('inicio')}}" class="btn btn-primary" > <h3>Página inicial</h3></a>
+                <a href="{{route('telaservidor')}}" class="btn btn-primary" > <h3>Logar</h3></a>
+                <a href="{{route('paginaadm')}}" class="btn btn-primary" > <h3>Voltar</h3></a>
                 <a href="{{route('recupera')}}" class="btn btn-link" ><h4>Esqueci minha senha</h4></a>
                 
                 <div class="row">

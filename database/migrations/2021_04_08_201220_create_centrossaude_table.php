@@ -17,6 +17,7 @@ class CreateCentrossaudeTable extends Migration
             $table->id();
             $table->timestamps();
             $table->string('horario_funcionamento', 50);
+            $table->string('nome', 50);
             $table->unsignedBigInteger('id_endereco');
             $table->foreign('id_endereco')->references('id')->on('enderecos');
             $table->unsignedBigInteger('id_usuario');

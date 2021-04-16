@@ -26,36 +26,37 @@
                <h1>Cadastre-se</h1>
            </div>
        </div>
-        <form> 
+        <form method="POST" action="{{ route('dadosusuario')}}"> 
             @csrf
         <div class="mb-3">
-          <label for="nomeinst" class="form-label"><h3>Nome da instituição:</h3></label>
-          <input type="text" class="form-control" id="nomeinst" name= "nomeinst">
+          <label for="nome" class="form-label"><h3>Nome:</h3></label>
+          <input type="text" class="form-control" id="nome" name= "nome">
         </div>
-        <div class="mb-3">
-            <label for="cnpj" class="form-label"><h3>CNPJ:</h3></label>
-            <input type="number" class="form-control" id="cnpj" name= "cnpj"></div>
-        <div class="mb-3">
-            <label for="bairro" class="form-label"><h3>Bairro:</h3></label>
-            <input type="text" class="form-control" id="bairro" name= "bairro"></div>
-        <div class="mb-3">
-            <label for="rua" class="form-label"><h3>Rua:</h3></label>
-            <input type="text" class="form-control" id="rua" name= "rua"></div>
-        <div class="mb-3">
-            <label for="numero" class="form-label"><h3>Nº da residência:</h3></label>
-            <input type="number" class="form-control" id="numero" name= "numero"></div>
         <div class="mb-3">
             <label for="email" class="form-label"><h3>E-mail:</h3></label>
             <input type="text" class="form-control" id="email" name= "email"></div>
+        {{-- <div class="mb-3">
+            <label for="bairro" class="form-label"><h3>Bairro:</h3></label>
+            <input type="text" class="form-control" id="bairro" name= "bairro"></div> --}}
+        {{-- <div class="mb-3">
+            <label for="rua" class="form-label"><h3>Rua:</h3></label>
+            <input type="text" class="form-control" id="rua" name= "rua"></div> --}}
+        {{-- <div class="mb-3">
+            <label for="numero" class="form-label"><h3>Número:</h3></label>
+            <input type="number" class="form-control" id="numero" name= "numero"></div> --}}
+        {{-- <div class="mb-3">
+            <label for="email" class="form-label"><h3>E-mail:</h3></label>
+            <input type="text" class="form-control" id="email" name= "email"></div> --}}
         <div class="mb-3">
             <label for="senha" class="form-label"><h3>Senha:</h3></label>
             <input type="password" class="form-control" id="senha" name= "senha"></div>
         <div class="mb-3">
             <label for="senha" class="form-label"><h3>Confirmar senha:</h3></label>
             <input type="password" class="form-control" id="senha" name= "senha"></div>
+
             
-            <button type="submit" class="btn btn-primary"><h3>Logar</h3></button>
-            <a href="{{route('inicio')}}" class="btn btn-primary" > <h3>Página inicial</h3></a>
+            <button type="submit" class="btn btn-primary"><h3>Cadastrar</h3></button>
+            <a href="{{route('paginaadm')}}" class="btn btn-primary" > <h3>Voltar</h3></a>
 
             <div class="row">
                 <ul class="nav justify-content-center">

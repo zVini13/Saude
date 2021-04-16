@@ -113,7 +113,77 @@
         <div class="row">
             <div role="main" class="col-md-9 col-md-push-3">
                     
+              <div class="row">
+                <div class="col-md-12"> 
+<h3>Operações:</h3>
+
+                  {{-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="http://hospitalsaomatheus.com.br/site/wp-content/uploads/2016/10/emergencia.jpg" alt="First slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="https://img1.migalhas.uol.com.br/gf_base/empresas/MIGA/imagens/FC95AFB1F92D7C35D2EBB119A274F0C96876_hospital.jpg" alt="Second slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="..." alt="Third slide">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Seguinte</span>
+                    </a>
+                  </div> --}}
+
+
+                </div>
+                <div class="col-md-4">
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="https://img2.gratispng.com/20180723/lkz/kisspng-computer-icons-completed-icon-5b568412cf3148.4880052815323965628487.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Consultas</h5>
+                      <p class="card-text">Aqui, você poderá ver, alterar e excluir as consultas que já estão cadastradas no sistema.</p>
+                      <a href="{{route('listarconsultasadm')}}" class="btn btn-primary">Ir</a>
+                    </div>
+                  </div>
+
+                  
+                </div>
+                <div class="col-md-4"> 
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="https://img2.gratispng.com/20180422/ioq/kisspng-hospital-symbol-computer-icons-medicine-televisions-5adc96c622abf3.161525361524405958142.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Plantões</h5>
+                      <p class="card-text">Aqui, você poderá ver, alterar e excluir os plantões já cadastrados no sistema.</p>
+                      <a href="{{route('listarplantoesadm')}}" class="btn btn-primary">Ir</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4"> 
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="https://e7.pngegg.com/pngimages/341/223/png-clipart-physician-hospital-medicine-computer-icons-symbol-symbol-miscellaneous-text.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Médicos</h5>
+                      <p class="card-text">Aqui, você poderá ver, alterar e excluir médicos já cadastrados no sistema.</p>
+                      <a href="{{route('listarmedicosadm')}}" class="btn btn-primary">Ir</a>
+                    </div>
+                  </div>
+                </div>
             </div>
+
+            </div>
+
+            
+
             <aside class="col-lg-3"> 
                 <!-- ============= COMPONENT ============== -->
                 <nav class="sidebar card py-2 mb-4">
@@ -137,6 +207,13 @@
                     <ul class="submenu collapse">
                         <li><a class="nav-link" href="{{route('agendarplantao')}}">Agendar plantão</a></li>
                         <li><a class="nav-link" href="{{route('listarplantoesadm')}}">Listar plantões</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item has-submenu">
+                    <a class="nav-link" href="#"> Médicos <i class="bi small bi-caret-down-fill"></i> </a>
+                    <ul class="submenu collapse">
+                      <li><a class="nav-link" href="{{route('cadastrarmedico')}}">Cadastrar novo médico</a></li>
+                      <li><a class="nav-link" href="{{route('listarmedicosadm')}}">Listar médicos</a></li>
                     </ul>
                   </li>
                   {{-- <li class="nav-item">
@@ -169,7 +246,7 @@
             </aside> --}}
         </div>
         <footer class="row">
-            
+          <h5>Todos os direitos reservados - Vinicius Santos Goes e Luca Borela - 2021</h5>
         </footer>
         
     </div>

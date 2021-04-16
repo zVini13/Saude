@@ -18,46 +18,40 @@
             font-size: 55px;
             /* background-color: aqua; */
         }
+        h2{
+            font-weight:bolder;
+
+        }
         header{
             background-color:darkgray;
-        }
-        h2{
-            font-weight: bolder;
         }
 </style>
 <body>
     <div class="container">
          <div class="row mt-3">
-            <header><div class="d-flex justify-content-center">
-                <h1>Plantões</h1>
-            </div>
-            </header>
-            </div>
+             <header><div class="d-flex justify-content-center">
+                <h1>Médicos</h1>
+            </div></header>
+        </div>
         
         <table class="table">
             <thead>
               <tr>
+                <th scope="col"><h2>Nome</h2></th>
                 <th scope="col"><h2>Especialidade</h2></th>
-                <th scope="col"><h2>Data</h2></th>
-                <th scope="col"><h2>Horário de início</h2></th>
-                <th scope="col"><h2>Horário de término</h2></th>
-                <th scope="col"><h2>Médico(a)</h2></th>
-                <th scope="col"><h2>Centro de Saúde</h2></th>
+                <th scope="col"><h2>Local de atendimento</h2></th>
                 <th scope="col"><h2>Ações</h2></th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td><h4>Geral</h4></td>
-                <td><h4>29/11/2021</h4></td>
-                <td><h4>15:30</h4></td>
-                <td><h4>12:00</h4></td>
-                <td><h4>Dr.Neymar</h4></td>
-                <td><h4>Hospital NeyDay</h4></td>
+                <td><a href="{{route('medico')}}" class="btn btn-light" ><h4>Dr.Rogério</h4></a></td>
+                <td><h4>Clínico Geral</h4></td>
+                <td><h4>Hospital Municipal e Postinho Ribeirão</h4></td>
                 <td>
-                    <a href="{{route('editarPlantao' )}}" class="btn btn-primary"> <h4>Editar</h4> </a>
-                    <a href="{{route('excluirPlantao')}}" class="btn btn-primary"> <h4>Apagar</h4> </a>
-    
+                    <a href="{{route('editarMedico' )}}" class="btn btn-primary"> <h4>Editar</h4> </a>
+                    <a href="{{route('excluirMedico')}}" class="btn btn-primary"> <h4>Apagar</h4> </a>
+
                 </td>
               </tr>
             </tbody>
@@ -68,6 +62,6 @@
         <a href="{{route('telaservidor')}}" class="btn btn-primary" > <h3>Voltar</h3></a>
     </div>
 
-</div>
+    
 </body>
 </html>

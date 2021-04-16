@@ -19,4 +19,24 @@ class MedicoController extends Controller
     {
         return view ('cliente.mostrarmedico');
     }
+    public function listarmedicosadm()
+    {
+        return view ('adm.listarmedicosadm');
+    }
+    public function editMedico()
+    {
+        return view ('adm.editmedico');
+    }
+    public function excluirMedico()
+    {
+        return redirect(route('adm.listarmedicosadm'));
+    }
+    public function cadastrarmedico()
+    {
+        return view ('adm.criarmedico');
+    }
+    public function medicocadastrado()
+    {
+        return view ('adm.dadosmedico');
+    }
 }

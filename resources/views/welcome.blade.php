@@ -113,6 +113,74 @@
         <div class="row">
             <div role="main" class="col-md-9 col-md-push-3">
                     
+        <div class="row">
+          <div class="col-md-12"> 
+            <h3>Seja bem-vindo!</h3></div>
+            <div class="col-md-12"> 
+              <h3>Principais acontecimentos de hoje:</h3></div>
+          <div class="col-md-6"> 
+            <h4>Consultas</h4>
+
+          </div>
+          <div class="col-md-6"> 
+            <h4>Médicos</h4>
+          </div>
+
+          <div class="col-md-6"> 
+
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Médico</th>
+                  <th scope="col">Especialidade</th>
+                  <th scope="col">Local de atendimento</th>
+                  <th scope="col">Horário</th>
+  
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Dr.Rogério</td>
+                  <td>Clínico Geral</td>
+                  <td>Hospital Municipal</td>
+                  <td>10:00 às 18:00</td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+
+
+          <div class="col-md-6"> 
+
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Nome</th>
+                  <th scope="col">Especialidade</th>
+                  <th scope="col">Local de atendimento</th>
+                  <th scope="col">Horário</th>
+  
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Dr.Fábio</td>
+                  <td>Clínico Geral</td>
+                  <td>Hospital Municipal</td>
+                  <td>10:00 às 18:00</td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+
+        </div>
+
+
+
+
+
             </div>
             <aside class="col-lg-3"> 
                 <!-- ============= COMPONENT ============== -->

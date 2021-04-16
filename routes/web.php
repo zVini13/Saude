@@ -48,6 +48,14 @@ Route::get('/showPlantao', 'App\Http\Controllers\PlantaoController@plantaocadast
 Route::get('/saveConsulta', 'App\Http\Controllers\ConsultaController@consultacadastrada')->name('consultacadastrada');
 Route::get('/editPlantao', 'App\Http\Controllers\PlantaoController@editPlantao')->name('editarPlantao');
 Route::get('/deletePlantao', 'App\Http\Controllers\PlantaoController@excluirPlantao')->name('excluirPlantao');
+Route::get('/listMedicosadm', 'App\Http\Controllers\MedicoController@listarmedicosadm')->name('listarmedicosadm');
+Route::get('/editMedico', 'App\Http\Controllers\MedicoController@editMedico')->name('editarMedico');
+Route::get('/deleteMedico', 'App\Http\Controllers\MedicoController@excluirMedico')->name('excluirMedico');
+Route::get('/createMedico', 'App\Http\Controllers\MedicoController@cadastrarmedico')->name('cadastrarmedico');
+Route::get('/showMedico', 'App\Http\Controllers\MedicoController@medicocadastrado')->name('medicocadastrado');
+
+
+
 
 
 

@@ -52,7 +52,7 @@ Route::get('/listMedicosadm', 'App\Http\Controllers\MedicoController@listarmedic
 Route::get('/editMedico', 'App\Http\Controllers\MedicoController@editMedico')->name('editarMedico');
 Route::get('/deleteMedico', 'App\Http\Controllers\MedicoController@excluirMedico')->name('excluirMedico');
 Route::get('/createMedico', 'App\Http\Controllers\MedicoController@cadastrarmedico')->name('cadastrarmedico');
-Route::get('/showMedico', 'App\Http\Controllers\MedicoController@medicocadastrado')->name('medicocadastrado');
+Route::get('/showMedicocadastrado', 'App\Http\Controllers\MedicoController@medicocadastrado')->name('medicocadastrado');
 
 
 

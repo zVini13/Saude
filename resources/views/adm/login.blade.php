@@ -26,18 +26,27 @@
                 <h1>Login</h1>
             </div>
         </div>
-        <form> 
+
+        @if ($errors->all())
+            @foreach ($errors->all() as $error)
+            <div class="alert alert-danger" role="alert">
+                {{$error}}
+              </div>
+            @endforeach
+        @endif
+
+        <form method="POST" action="{{ route('validarlogin')}}"> 
             @csrf
             <div class="mb-3">
                 <label for="email" class="form-label"><h3>E-mail:</h3></label>
                 <input type="text" class="form-control" id="email" name= "email">
             </div>
             <div class="mb-3">
-                <label for="senha" class="form-label"><h3>Senha:</h3></label>
-                <input type="password" class="form-control" id="senha" name= "senha"></div>
+                <label for="password" class="form-label"><h3>Senha:</h3></label>
+                <input type="password" class="form-control" id="password" name= "password"></div>
         
         
-                <a href="{{route('telaservidor')}}" class="btn btn-primary" > <h3>Logar</h3></a>
+                <button class="btn btn-primary" type="submit" ><h3>Logar</h3></button>
                 <a href="{{route('paginaadm')}}" class="btn btn-primary" > <h3>Voltar</h3></a>
                 <a href="{{route('recupera')}}" class="btn btn-link" ><h4>Esqueci minha senha</h4></a>
                 

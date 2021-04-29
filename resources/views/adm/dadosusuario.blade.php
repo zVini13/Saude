@@ -25,13 +25,10 @@
             </div>
          </div>
          <div class="row mt-1">
-            <p class="text-center"><h2>Nome: {{$usuario->nome}}</h2></p>
+            <p class="text-center"><h2>Nome: {{$user->name}}</h2></p>
          </div>
          <div class="row mt-1">
-            <p class="text-center"><h2>E-mail: {{$usuario->email}}</h2> </p>
-         </div>
-         <div class="row mt-1">
-            <p class="text-center"><h2>Senha: {{$usuario->senha}}</h2> </p>
+            <p class="text-center"><h2>E-mail: {{$user->email}}</h2> </p>
          </div>
 
          <a href="{{route('login')}}" class="btn btn-primary" > <h4>Tela de login</h4></a></div>

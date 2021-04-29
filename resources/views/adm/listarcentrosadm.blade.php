@@ -46,19 +46,20 @@
               </tr>
             </thead>
             <tbody>
+              @foreach ($centrossaude as $centro)
               <tr>
-                <td><a href="{{route('centrodesaude')}}" class="btn btn-light" ><h4>Hospital Orlando</h4></a></td>  
-                <td><h4>6:30 às 23:00</h4></td>
-                <td><h4>Milhomem</h4></td>
-                <td><h4>Centro</h4></td>
-                <td><h4>190</h4></td>
+                <td><a href="{{route('centrodesaude')}}" class="btn btn-light" ><h4>{{$centro->nome}}</h4></a></td>  
+                <td><h4>{{$centro->horario_funcionamento}}</h4></td>
+                <td><h4>{{$centro->logradouro}}</h4></td>
+                <td><h4>{{$centro->bairro}}</h4></td>
+                <td><h4>{{$centro->número}}</h4></td>
                 <td>
                     <a href="{{route('editarCentro' )}}" class="btn btn-primary"><h4>Editar</h4> </a>
                     <a href="{{route('excluirCentro')}}" class="btn btn-primary"> <h4>Apagar</h4> </a>
     
                 </td>
               </tr>
-            
+              @endforeach
 
             </tbody>
           </table>
@@ -67,7 +68,5 @@
 
         <a href="{{route('telaservidor')}}" class="btn btn-primary" > <h3>Voltar</h3></a>
     </div>
-
-</div>
 </body>
 </html>

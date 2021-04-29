@@ -18,6 +18,9 @@ Route::get('/', function () {
 })->name('inicio');
 
 Route::get('/createLogin', 'App\Http\Controllers\UsuarioController@logar')->name('login');
+Route::post('/saveLogin', 'App\Http\Controllers\UsuarioController@validarlogin')->name('validarlogin');
+Route::get('/createLogout', 'App\Http\Controllers\UsuarioController@logout')->name('logout');
+
 Route::get('/createCadastro', 'App\Http\Controllers\UsuarioController@cadastrar')->name('cadastro');
 Route::get('/createRecuperar-senha', 'App\Http\Controllers\UsuarioController@recuperar')->name('recupera');
 Route::get('/createAdm', 'App\Http\Controllers\UsuarioController@paginaadm')->name('paginaadm');
@@ -35,7 +38,7 @@ Route::get('/showCentrodesaude', 'App\Http\Controllers\CentroSaudeController@cen
 Route::post('/createdadosusuario', 'App\Http\Controllers\UsuarioController@dadosusuario')->name('dadosusuario');
 Route::get('/createCadastroInstituicao', 'App\Http\Controllers\CentroSaudeController@cadastrocentro')->name('cadastrocentro');
 Route::get('/createConsulta', 'App\Http\Controllers\ConsultaController@agendarconsulta')->name('agendarconsulta');
-Route::get('/saveCentrosaude', 'App\Http\Controllers\CentroSaudeController@centrocadastrado')->name('centrocadastrado');
+Route::post('/saveCentrosaude', 'App\Http\Controllers\CentroSaudeController@centrocadastrado')->name('centrocadastrado');
 Route::get('/listCentrosadm', 'App\Http\Controllers\CentroSaudeController@listarcentrosadm')->name('listarcentrosadm');
 Route::get('/deleteCentro', 'App\Http\Controllers\CentroSaudeController@excluirCentro')->name('excluirCentro');
 Route::get('/editCentro', 'App\Http\Controllers\CentroSaudeController@editCentro')->name('editarCentro');

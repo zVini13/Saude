@@ -29,8 +29,8 @@
         <form method="POST" action="{{ route('dadosusuario')}}"> 
             @csrf
         <div class="mb-3">
-          <label for="nome" class="form-label"><h3>Nome:</h3></label>
-          <input type="text" class="form-control" id="nome" name= "nome">
+          <label for="name" class="form-label"><h3>Nome:</h3></label>
+          <input type="text" class="form-control" id="name" name= "name">
         </div>
         <div class="mb-3">
             <label for="email" class="form-label"><h3>E-mail:</h3></label>
@@ -48,11 +48,11 @@
             <label for="email" class="form-label"><h3>E-mail:</h3></label>
             <input type="text" class="form-control" id="email" name= "email"></div> --}}
         <div class="mb-3">
-            <label for="senha" class="form-label"><h3>Senha:</h3></label>
-            <input type="password" class="form-control" id="senha" name= "senha"></div>
+            <label for="password" class="form-label"><h3>Senha:</h3></label>
+            <input type="password" class="form-control" id="password" name= "password"></div>
         <div class="mb-3">
-            <label for="senha" class="form-label"><h3>Confirmar senha:</h3></label>
-            <input type="password" class="form-control" id="senha" name= "senha"></div>
+            <label for="password" class="form-label"><h3>Confirmar senha:</h3></label>
+            <input type="password" class="form-control" id="password" name= "password"></div>
 
             
             <button type="submit" class="btn btn-primary"><h3>Cadastrar</h3></button>

@@ -178,6 +178,7 @@
                     </div>
                   </div>
                 </div>
+                
             </div>
 
             </div>
@@ -216,6 +217,11 @@
                       <li><a class="nav-link" href="{{route('listarmedicosadm')}}">Listar médicos</a></li>
                     </ul>
                   </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{route('logout')}}"> Sair </a>
+                  </li>
+
+                  
                   {{-- <li class="nav-item">
                     <a class="nav-link" href="#"> Menu item </a>
                   </li>

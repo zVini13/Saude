@@ -25,25 +25,28 @@
             </div>
          </div>
          <div class="row mt-1">
-            <p class="text-center"><h2>Nome:</h2></p>
+            <p class="text-center"><h2>Nome: {{$centro->nome}} </h2></p>
          </div>
          <div class="row mt-1">
-            <p class="text-center"><h2>CNPJ:</h2> </p>
+            <p class="text-center"><h2>CNPJ: {{$centro->cnpj}}</h2> </p>
          </div>
          <div class="row mt-1">
-            <p class="text-center"><h2>Horário de funcionamento:</h2> </p>
+            <p class="text-center"><h2>Horário de funcionamento: {{$centro->horario_funcionamento}}</h2> </p>
          </div>
          <div class="row mt-1">
-            <p class="text-center"><h2>Rua:</h2> </p>
+            <p class="text-center"><h2>Rua: {{$endereco->logradouro}}</h2> </p>
          </div>
          <div class="row mt-1">
-            <p class="text-center"><h2>Bairro:</h2> </p>
+            <p class="text-center"><h2>Bairro: {{$endereco->bairro}}</h2> </p>
          </div>
          <div class="row mt-1">
-            <p class="text-center"><h2>Número:</h2> </p>
+            <p class="text-center"><h2>Número: {{$endereco->numero}}</h2> </p>
          </div>
          <div class="row mt-1">
-            <p class="text-center"><h2>Médicos:</h2> </p>
+            <p class="text-center"><h2>Cidade: {{$endereco->cidade}}</h2> </p>
+         </div>
+         <div class="row mt-1">
+            <p class="text-center"><h2>Complemento: {{$endereco->complemento}}</h2> </p>
          </div>
 
          <a href="{{route('telaservidor')}}" class="btn btn-primary" > <h4>Voltar para a página inicial</h4></a></div>

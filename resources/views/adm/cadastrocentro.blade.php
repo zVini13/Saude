@@ -26,7 +26,7 @@
                <h1>Cadastrar centro de saúde</h1>
            </div>
        </div>
-        <form> 
+        <form method="POST" action="{{ route('centrocadastrado')}}"> 
             @csrf
         <div class="mb-3">
           <label for="nome" class="form-label"><h3>Nome:</h3></label>
@@ -34,16 +34,22 @@
         </div>
         <div class="mb-3">
             <label for="cnpj" class="form-label"><h3>CNPJ:</h3></label>
-            <input type="number" class="form-control" id="cnpj" name= "cnpj"></div>
+            <input type="string" class="form-control" id="cnpj" name= "cnpj"></div>
         <div class="mb-3">
-            <label for="rua" class="form-label"><h3>Rua:</h3></label>
-            <input type="text" class="form-control" id="rua" name= "rua"></div>   
+            <label for="logradouro" class="form-label"><h3>Rua:</h3></label>
+            <input type="text" class="form-control" id="logradouro" name= "logradouro"></div>   
         <div class="mb-3">
             <label for="bairro" class="form-label"><h3>Bairro:</h3></label>
             <input type="text" class="form-control" id="bairro" name= "bairro"></div> 
             <div class="mb-3">
                 <label for="numero" class="form-label"><h3>Número:</h3></label>
                 <input type="number" class="form-control" id="numero" name= "numero"></div>
+                <div class="mb-3">
+                    <label for="cidade" class="form-label"><h3>Cidade:</h3></label>
+                    <input type="string" class="form-control" id="cidade" name= "cidade"></div>
+                    <div class="mb-3">
+                        <label for="complemento" class="form-label"><h3>Complemento:</h3></label>
+                        <input type="string" class="form-control" id="complemento" name= "complemento"></div>
         {{-- <div class="mb-3">
             <label for="bairro" class="form-label"><h3>Bairro:</h3></label>
             <input type="text" class="form-control" id="bairro" name= "bairro"></div> --}}
@@ -61,7 +67,7 @@
             <input type="string" class="form-control" id="horario_funcionamento" name= "horario_funcionamento"></div>
 
             
-            <a href="{{route('centrocadastrado')}}" class="btn btn-primary" > <h3>Cadastrar</h3></a>
+            <button type="submit" class="btn btn-primary"><h3>Cadastrar</h3></button>
             <a href="{{route('telaservidor')}}" class="btn btn-primary" > <h3>Voltar</h3></a>
 
         
